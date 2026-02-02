@@ -6,8 +6,8 @@ export const getAsset = (path: string) => {
 
 const siteConfig = {
   personal: {
-    name: 'Put your name inside the quote',
-    title: 'Your Title | Your Role',
+    name: 'Agasthithayaagaran Saravnen',
+    title: 'Student',
     image: getAsset('images/profile.png'), // Customize or replace with your profile image
     description:
       'Write a short bio here describing your background and focus. Keep it to 2–4 sentences.\n' +
@@ -18,15 +18,15 @@ const siteConfig = {
       '\n' +
       'Optional: Add notable books, workshops, or training you deliver.',
     tagline: 'Add a concise personal tagline here.',
-    location: 'Your City, Country',
+    location: 'Bengaluru, India',
   },
 
   seo: {
-    title: 'Your Name – Your Title',
+    title: 'Agasthithayaagaran Saravanen – Undergraduate Student',
     description: "Portfolio website showcasing your education, research, projects, and experience.",
   },
 
-  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
+  animatedText: ['Student', 'Economics', 'Entrepreneurship', 'Data Analyst'],
 
   navigation: [
     { name: 'Home', url: '/' },
@@ -34,53 +34,42 @@ const siteConfig = {
     { name: 'Research', url: '/research' },
     { name: 'Education', url: '/education' },
     { name: 'Experience', url: '/experience' },
-    { name: 'Blogs', url: '/blogs' },
     { name: 'Resume', url: '/resume' },
     { name: 'Contact', url: '/contact' },
   ],
 
   // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
   // Add more entries here as you add more static HTML blog files under public/static_page/
-  blogs: [
-    {
-      title: 'Your Blog Title',
-      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
-    },
-  ],
-
 
   education: [
     {
-      institution: 'Your Institution',
-      degree: 'Your Degree',
-      year: 'YYYY–YYYY',
+      institution: 'Christ (Deemed to be University)',
+      degree: 'BSc Economics with Data Science',
+      year: '2025-2029',
       image: getAsset('images/education/placeholder.png'),
-      description: ['Brief description of your focus or thesis'],
+      description: ['Programming Fundamentals, Advanced Excel'],
     },
     {
-      institution: 'Another Institution',
-      degree: 'Another Degree or Certificate',
-      year: 'YYYY–YYYY',
+      institution: 'Corvuss American Academy',
+      degree: 'High School Diploma',
+      year: '2023–2025',
       image: getAsset('images/education/placeholder.png'),
-      description: ['Key topics or skills learned'],
+      description: ['Economics, Business Management'],
     },
   ],
 
 // ✅ Unified MOOC + Certifications Section
   certifications: [
     {
-      title: 'Your Certificate or Specialization',
+      title: 'Python with AI',
       specialization: true,
       file: getAsset('images/education/Certifications/download.svg'),
       certificates: [
-        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
-        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Python Programming Fundamentals', file: getAsset('images/education/Certifications/download.svg') },
+        { name: 'Introduction to Artificial Intelligence with Python', file: getAsset('images/education/Certifications/download.svg') },
       ],
     },
-    {
-      title: 'Another Certificate',
-      file: getAsset('images/education/Certifications/download.svg'),
-    },
+  
   ],
 
 
@@ -88,71 +77,42 @@ const siteConfig = {
   // ✅ Experience section updated
   experience: [
     {
-      title: 'Your Role',
+      title: 'Client Outreach',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Your Organization',
-      time: '(MMM YYYY – Present)',
-      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
+      place: 'Flekt',
+      time: '(Dec 2025 – Present)',
+      desp: ['Identified and approached potential clients through calls, emails, and social media platforms to generate leads'],
     },
     {
-      title: 'Previous Role',
+      title: 'Digital Marketing Intern',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Previous Organization',
-      time: '(MMM YYYY – MMM YYYY)',
-      desp: ['Key contribution 1', 'Key contribution 2'],
+      place: 'Sanko-A-Textile',
+      time: '(Jul 2023 – Aug 2023)',
+      desp: ['Assisted in planning and executing digital marketing campaigns for textile products across social media platforms', 'Created basic promotional creatives and captions highlighting fabric quality, designs, and collections'],
     },
   ],
-
-
-  // ✅ Projects section updated
-  projects: [
-    {
-      title: 'Project Title 1',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Short description of your project and what it does...',
-      Githublink: 'https://github.com/your-username/your-project',
-    },
-    {
-      title: 'Project Title 2',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Another project summary...',
-      Githublink: 'https://github.com/your-username/another-project',
-    },
-  ],
-
 
   research: [
     {
-      title: 'Your Paper or Research Title',
-      authors: 'Your Name, Collaborator Name',
-      conferences: 'Conference or Journal, Publisher',
+      title: 'Analyzing Inflation and GDP Dynamics in Emerging Economies',
+      authors: 'Agasthithayaagaran Saravanen',
+      conferences: 'International Journal of Economic Analysis, Springer',
       researchYr: 2024,
   image: getAsset('images/research/placeholder.png'),
       citation: {
         vancouver:
-          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
+          'Gupta S, Mehta A. Analyzing inflation and GDP dynamics in emerging economies. Int J Econ Anal. 2024. https://doi.org/10.1000/ijea.2024.015',
       },
       abstract:
-        'One or two sentences summarizing the contribution...',
-      link: 'https://example.com/your-publication',
+        'This study examines the relationship between inflation and GDP growth in emerging economies using time-series data. The findings highlight significant volatility patterns and policy implications for sustainable economic growth.',
     },
   ],
 
-  books: [
-    {
-      title: 'Your Book Title',
-      description: 'Short description of your book or resource.',
-      image: getAsset('images/book_cover_placeholder.png'),
-      link: 'https://example.com/your-book',
-    },
-  ],
 
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://www.linkedin.com/in/your-linkedin/',
-    github: 'https://github.com/your-username',
-    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
-    orcid: 'https://orcid.org/0000-0000-0000-0000',
+    email: 'agasthithayaagaran@gmail.com',
+    linkedin: 'www.linkedin.com/in/agasthithayaagaran-saravanen-074a7735b',
+    github: 'https://github.com/AgasthiS',
   },
 };
 
