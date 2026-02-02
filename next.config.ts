@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export", // 👈 enables static site generation for GitHub Pages
-  basePath: "/website", // 👈 must match your repo name exactly
-  assetPrefix: "/website/", // 👈 ensures assets load correctly
+  basePath: "/agasthi_resume", // 👈 must match your repo name exactly
+  assetPrefix: "/agasthi_resume/", // 👈 ensures assets load correctly
   images: {
     unoptimized: true, // 👈 disables Next.js image optimization (needed for static hosting)
   },
