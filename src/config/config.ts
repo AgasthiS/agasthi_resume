@@ -23,7 +23,7 @@ const siteConfig = {
 
   seo: {
     title: 'Agasthithayaagaran Saravanen – Undergraduate Student',
-    description: "Portfolio website showcasing your education, research, projects, and experience.",
+    description: "I’m a student interested in economics, data analysis, and problem-solving, with a strong foundation in math and research. I also have hands-on experience through projects and internships in areas like digital marketing and client outreach.",
   },
 
   animatedText: ['Student', 'Economics', 'Entrepreneurship', 'Data Analyst'],
