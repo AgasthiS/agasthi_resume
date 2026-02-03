@@ -51,7 +51,7 @@ const siteConfig = {
     },
     {
       institution: 'Corvuss American Academy',
-      degree: 'High School Diploma',
+      degree: 'High School Diploma (WASC)',
       year: '2023–2025',
       image: getAsset('images/education/placeholder.png'),
       description: ['Economics, Business Management'],
